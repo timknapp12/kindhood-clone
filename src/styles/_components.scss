@@ -1,0 +1,17 @@
+// NavBar
+
+.nav {
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_itmes{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+

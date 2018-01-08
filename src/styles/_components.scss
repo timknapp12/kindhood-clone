@@ -1,17 +1,52 @@
 // NavBar
 
 .nav {
-    background-color: blue;
-    height: 50px;
+    // background-color: blue;
+    @include flex;
+}
+
+.main_logo {
+    margin-left: 130px;
+}
+
+.nav_container {
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-
 .nav_itmes{
     display: flex;
-    width: 60%;
+    width: 65%;
+    margin-right: 120px;
     justify-content: space-around;
     align-items: center;
+    font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: normal;
+    font-size: .9em;
+    letter-spacing: .1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.search_icon {
+    height: 32px;
+    width: auto;
+    margin-right: -20px;
+    margin-bottom: 5px;
+}
+
+.cart_icon {
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.shop_container {
+
+}
+
+.main_image {
+    height: auto;
+    width: 79%;
+    margin-top: 58px;
+}

@@ -57,7 +57,7 @@ table {
 
 .nav_itmes {
   display: flex;
-  width: 65%;
+  width: 63%;
   margin-right: 120px;
   justify-content: space-around;
   align-items: center;
@@ -78,7 +78,35 @@ table {
   height: 32px;
   margin-bottom: 10px; }
 
+.shop_body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.shop_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 79.5%;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .main_image {
   height: auto;
-  width: 79%;
+  width: 100%;
   margin-top: 58px; }
+
+.shop_heading {
+  font-size: 1.2em;
+  margin-top: 85px;
+  letter-spacing: .1em; }
+
+.main_paragrpah {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  text-align: left;
+  line-height: 1.7;
+  font-weight: 200;
+  font-size: 1.03em; }

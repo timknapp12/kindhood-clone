@@ -17,7 +17,7 @@
 }
 .nav_itmes{
     display: flex;
-    width: 63%;
+    width: 66%;
     margin-right: 120px;
     justify-content: space-around;
     align-items: center;
@@ -28,6 +28,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+a:link {
+    color: #1c1d1d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1c1d1d;
+}
+
+// .nav_itmes li:link {
+//     text-decoration: none;
+// }
+
+// .nav_itmes li:visited {
+//     text-decoration: none;
+// }
 
 .search_icon {
     height: 32px;

@@ -57,7 +57,7 @@ table {
 
 .nav_itmes {
   display: flex;
-  width: 63%;
+  width: 66%;
   margin-right: 120px;
   justify-content: space-around;
   align-items: center;
@@ -67,6 +67,13 @@ table {
   letter-spacing: .1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+a:link {
+  color: #1c1d1d;
+  text-decoration: none; }
+
+a:visited {
+  color: #1c1d1d; }
 
 .search_icon {
   height: 32px;

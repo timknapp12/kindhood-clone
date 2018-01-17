@@ -12,10 +12,10 @@ export default function Navbar() {
             <div className='nav_container' > 
                 <ul className='nav_itmes'>
                  <Link to='/'><li>SHOP</li></Link>
-                 <li>LOOK BOOK</li>
+                 <Link to='lookbook'><li>LOOK BOOK</li></Link>
                  <Link to='/about'><li>ABOUT US</li></Link>
-                 <li>CONTACT</li>
-                 <li>FAQ</li>
+                 <Link to='contact'><li>CONTACT</li></Link>
+                 <Link to='faq'><li>FAQ</li></Link>
                 <img src={searchIcon} className='search_icon' alt='search icon' />
                 <img src={cartIcon} className='cart_icon' alt='cart icon' />
                 </ul>

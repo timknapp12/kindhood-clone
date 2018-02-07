@@ -55,6 +55,9 @@ table {
   display: flex;
   justify-content: flex-end; }
 
+.disclaimer {
+  font-size: 10px; }
+
 .nav_itmes {
   display: flex;
   width: 66%;

@@ -9,7 +9,8 @@ export default function Navbar() {
     return(
         <div className='nav'>
             <img className='main_logo' src={logo} alt='main_logo'/>
-            <div className='nav_container' > 
+            <div className='nav_container'> 
+            <p className='disclaimer'>this is not a real website, just a clone for practice</p>
                 <ul className='nav_itmes'>
                  <Link to='/'><li>SHOP</li></Link>
                  <Link to='lookbook'><li>LOOK BOOK</li></Link>

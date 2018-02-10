@@ -1,8 +1,28 @@
 import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
+import axios from 'axios';
 
 export default class Shop extends Component {
+    //using the new class properties proposal you no longer need a constructor function to initailize state- as I've done below:
+    state = {
+        user: "Bob",
+        products: []
+    }
+
+  displayProducts(){
+      axios.get('/api/products').then(res => res.data);
+  }  
+
+  componentDidMount(){
+      console.log(this.state.user);
+      this.displayProducts();
+  }  
+
   render() {
+      const products = this.props.products.map(products => {
+        
+
+      })
     return (
       <div className='shop_body' >
         <div className="shop_container">

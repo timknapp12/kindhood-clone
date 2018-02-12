@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
 import axios from 'axios';
+import {displayProducts} from './services';
 
 export default class Shop extends Component {
     //using the new class properties proposal you no longer need a constructor function to initailize state- as I've done below:
@@ -13,16 +14,17 @@ export default class Shop extends Component {
       axios.get('/api/products').then(res => res.data);
   }  
 
-  componentDidMount(){
+  componentWillMount(){
       console.log(this.state.user);
-      this.displayProducts();
+      displayProducts().then(res => {
+          this.setState({products: res})
+      })
+      console.log(this.state.products);
   }  
 
   render() {
-      const products = this.props.products.map(products => {
-        
-
-      })
+      const products = this.state.products
+      const hyphen = `\u2014`
     return (
       <div className='shop_body' >
         <div className="shop_container">
@@ -40,6 +42,16 @@ export default class Shop extends Component {
             super-soft and quick-drying bamboo cotton fabric. Choose from an
             array of contemporary patterns.
           </p>
+        <div>
+            
+                {products.map(item => {
+                    return <div key={item.product_id}>
+                        {item.product_name} {hyphen}
+                        ${item.product_price}
+                    </div>
+                })}
+            
+        </div> 
         </div>
       </div>
     );

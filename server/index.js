@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
@@ -13,7 +14,7 @@ app.use(cors());
 
 app.use(
     session({
-    secret: process.env.SECRET,
+    secret: 'jdjdjdkksjkfjfkdkskakd',
     resave: false,
     saveUnitialized: true
     })
@@ -26,7 +27,9 @@ massive(process.env.CONNECTION_STRING).then(db => {
 app.get('/api/products', (req, res, next) => {
     const db = req.app.get('db');
 
-    db.get_products().then(products => res.status(200)).send(products);
+    db.get_products()
+    .then(products => res.status(200).send(products))
+    .catch(() => res.status(500).send());
 })
 
 

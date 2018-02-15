@@ -24,9 +24,11 @@ export default function Footer() {
                 <span className=''> Instagram </span>
             </div> 
             <div className='footer__newsletter' >
-                <img src={newsletter}
-                
-                />
+                <img className='footer__newsletter__image' alt='newsletter' src={newsletter}/>
+                <div className='footer__newletter__input-and-button-div' > 
+                    <input className='footer__newsletter__input' />
+                    <button type='text' className='footer__newsletter__button'>SUBSCRIBE</button>
+                </div>
             </div> 
             <div>
             </div> 

@@ -185,4 +185,36 @@ a:visited {
   -moz-osx-font-smoothing: grayscale; }
 
 .footer__newsletter {
-  grid-area: 3/7; }
+  grid-area: 3/7;
+  position: relative; }
+
+.footer__newsletter__image {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.footer__newletter__input-and-button-div {
+  position: absolute;
+  top: 68px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__newsletter__input {
+  height: 40px;
+  width: 230px;
+  font-size: 23px;
+  border: #265b4d solid 1px; }
+
+.footer__newsletter__button {
+  height: 46px;
+  width: 144px;
+  background: #265b4d;
+  color: white;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: .8em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: .1em;
+  margin-left: -2px; }

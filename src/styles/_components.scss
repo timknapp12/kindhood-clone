@@ -172,6 +172,26 @@ a:visited {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.footer__second-grid-social-and-text {
+    @include flex;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+#pinterest {
+    margin-top: 25px;
+}
+
+#insta {
+    margin-top: 25px;
+}
+
 .footer__newsletter {
     grid-area: 3/7;
     position: relative;

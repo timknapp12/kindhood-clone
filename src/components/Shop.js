@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
 import axios from 'axios';
 import {displayProducts} from './services';
+import Product from './Product';
+import { Link } from 'react-router-dom';
 
 export default class Shop extends Component {
     //using the new class properties proposal you no longer need a constructor function to initailize state- as I've done below:
@@ -45,13 +47,14 @@ export default class Shop extends Component {
                 </p>
             </div>
             <div className='products-section' >
-            
+                {/* <Product
+                displayProducts={displayProducts}/> */}
                 {products.map(item => {
                     return <div className='products-section__container'  key={item.product_id}>
                         <img className='products-section__images' src={item.product_image1} alt='product'/>
-                        <div className='product-section__name-and-price' >{item.product_name} {hyphen}
+                        <Link to={`/product/${item.product_id}`}><div className='product-section__name-and-price' >{item.product_name} {hyphen}
                         ${item.product_price}
-                        </div>
+                        </div></Link>
                     </div>
                 })}
             

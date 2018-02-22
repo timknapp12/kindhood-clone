@@ -32,6 +32,12 @@ app.get('/api/products', (req, res, next) => {
     .catch(() => res.status(500).send());
 })
 
+app.get('/api/products/:id', (req, res, next) => {
+    const db = req.app.get('db');
+
+    db.get_product([req.params.id])
+    .then(product => res.status(200).send(product))
+}) 
 
 
 

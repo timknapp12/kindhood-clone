@@ -30,7 +30,7 @@ export default class Shop extends Component {
     return (
       <div className='shop-body' >
         <div className="shop-container">
-            <div className='shop_container__column' >
+            <div className='shop-container__column' >
                 <img className="main-image" alt="main" src={mainImage} />
                 <p className="shop-heading">KIDS' HOODED PONCHO TOWELS</p>
                 <p className="main-paragrpah">

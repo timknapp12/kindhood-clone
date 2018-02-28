@@ -1,11 +1,66 @@
 import React from 'react';
+import faq_photo from '../assets/Kindhood_Facts_Hero.jpg'
+import soft from '../assets/Soft_Towel_Icon.png';
+import anti from '../assets/Antibacterial_Icon.png';
+import uv from '../assets/UV_Protection_Icon.png';
+import sensitive from '../assets/Sensitive_Icon.png';
+import moisture from '../assets/Moisture_Icon.png';
+import temp from '../assets/Temperature_Control_Icon.png';
 
 export default function FAQ(props) {
 
 
     return(
-        <div>
-            FAQ page
+        <div className='shop-body' >
+            <div className="shop-container">
+                <div className='shop-container__column' >
+                <img alt='faqphoto' src={faq_photo} className='main-image' />
+                <div className='faq-section' >
+                    <h3 className='faq-section__title' >WHAT ARE THE BENEFITS OF        BAMBOO COTTON?
+                    </h3>
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={soft}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >Soft:</strong> The most surprising aspect of our bamboo cotton material is how soft and delicate it feels against your child’s skin.
+                        </div>
+                    </div> 
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={anti}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >Antibacterial:</strong>  One of the most amazing aspects of bamboo is that bacteria doesn’t survive well in this fabric; most towels tend to smell and bacteria can grow quickly, but bamboo dries quickly so bacteria can’t thrive. Our bamboo and cotton hooded towel ponchos continually smell fresh and clean.
+                        </div>
+                    </div> 
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={uv}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >UV Protection:</strong> Bamboo fabric cuts out 97.5% of harmful UV rays. Your littles can keep playing without the need of extra sunblock.
+                        </div>
+                    </div> 
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={sensitive}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >Sensitive:</strong> Towels can be harsh and abrasive against many delicate skin types, but because our bamboo cotton material is so soft, it doesn’t affect sensitive skin.
+                        </div>
+                    </div> 
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={moisture}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >Moisture Wicking:</strong> Bamboo cotton is super absorbent – your little one won’t get that soggy towel feeling when wearing a poncho - it wicks away moisture and dries pretty quickly, making it more comfortable to wear.
+                        </div>
+                    </div> 
+                    <div className='faq-section__icons' >
+                        <img className='faq-section__icons-image' alt='soft_icon' src={temp}  />
+                        <div className='faq-section__icons-description' >
+                            <strong id='bold_type' >Temperature Control:</strong> Bamboo is a hollow microfiber, which makes it warm yet very breathable. Your child won’t overheat while wearing one of our cover-ups.
+                        </div>
+                    </div> 
+                    
+                </div>
+                <h2 className='faq-elipses' >
+                        ...............................................................................................................                    
+                    </h2>
+                </div> 
+            </div> 
         </div> 
     )
 }

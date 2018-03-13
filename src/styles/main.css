@@ -88,12 +88,12 @@ a:visited {
   height: 32px;
   margin-bottom: 10px; }
 
-.shop-body {
+.main-body {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.shop-container {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,7 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.shop-container__column {
+.main-container__column {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,12 +241,16 @@ a:visited {
   width: 80%;
   align-content: left; }
 
-.faq-section__title {
+.faq-section__subheadings {
   text-align: left;
   color: #265b4d;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.05em;
   margin-bottom: 40px;
+  margin-top: 70px;
+  letter-spacing: 2px; }
+
+#first-subheading {
   margin-top: 20px; }
 
 .faq-section__icons {
@@ -261,8 +265,13 @@ a:visited {
 
 .faq-section__icons-description {
   margin-left: 10px;
-  line-height: 1.5;
-  font-size: .9em; }
+  line-height: 21.882px;
+  font-size: 14px;
+  text-align: left;
+  font-family: "Open Sans", 'HelveticaNeue', "Helvetica Neue", sans-serif;
+  color: #1c1d1d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 #bold_type {
   font-weight: bold; }
@@ -273,3 +282,29 @@ a:visited {
   margin-top: 100px;
   text-align: left;
   color: #265b4d; }
+
+.faq-section__sizes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -8px; }
+
+.faq-section__sizes li {
+  display: list-item;
+  margin-left: 19px;
+  list-style-type: disc;
+  align-content: left;
+  font-size: 14px;
+  font-family: "Open Sans", 'HelveticaNeue', "Helvetica Neue", sans-serif;
+  color: #1c1d1d;
+  margin-top: 6px; }
+
+#faq-section__secondondary-paragraphs {
+  margin-left: 0; }
+
+#faq-section__last-heading {
+  margin-top: -32px; }
+
+.Lookbook-container {
+  width: 79%;
+  margin-top: 55px; }

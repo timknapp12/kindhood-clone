@@ -300,8 +300,8 @@ a:visited {
     list-style-type: disc;
     align-content: left;
     font-size: 14px;
-    font-family: "Open Sans", 'HelveticaNeue', "Helvetica Neue", sans-serif;
-    color: #1c1d1d;
+    font-family: $body_font;
+    color: $main_color;
     margin-top: 6px;
 }
 
@@ -321,3 +321,49 @@ a:visited {
 }
 
 //     ---------------       Contact Page   -------------------
+.form {
+    width: 100%;
+    margin-top: 40px;
+    height: 100px;
+    font-size: 1.2em;   // the font size here doesn't apply to the entire form, it has to be directly applied to each element
+    margin-bottom: 300px;
+}
+
+.form__name-input {
+    width: 49%;
+    float: left;
+    height: 35px;
+    font-size: 1em;
+    background: $background_color;
+}
+
+.form__email-input {
+    width: 49%;
+    float: right;
+    height: 35px;
+    font-size: 1em;
+    background: $background_color;
+}
+
+.form__section-two {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.form__section-two--phone-number {
+    margin-top: 20px;
+    width: 99.25%;
+    height: 35px;
+    font-size: 1em;
+    background: $background_color;
+}
+
+.form__section-two--message {
+    width: 99.25%;
+    margin-top: 20px;
+    font-size: 1em;
+    height: 300px;
+    background: $background_color;
+}

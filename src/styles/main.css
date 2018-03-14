@@ -295,7 +295,7 @@ a:visited {
   list-style-type: disc;
   align-content: left;
   font-size: 14px;
-  font-family: "Open Sans", 'HelveticaNeue', "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
   color: #1c1d1d;
   margin-top: 6px; }
 
@@ -308,3 +308,46 @@ a:visited {
 .Lookbook-container {
   width: 79%;
   margin-top: 55px; }
+
+.form {
+  width: 100%;
+  margin-top: 40px;
+  height: 100px;
+  font-size: 1.2em;
+  margin-bottom: 300px; }
+
+.form__name-input {
+  width: 49%;
+  float: left;
+  height: 35px;
+  font-size: 1em;
+  background: #f6f6f6; }
+
+.form__email-input {
+  width: 49%;
+  float: right;
+  height: 35px;
+  font-size: 1em;
+  background: #f6f6f6; }
+
+.form__section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end; }
+
+.form__section-two--phone-number {
+  margin-top: 20px;
+  width: 99.25%;
+  height: 35px;
+  font-size: 1em;
+  background: #f6f6f6; }
+
+.form__section-two--message {
+  width: 99.25%;
+  margin-top: 20px;
+  font-size: 1em;
+  height: 300px;
+  background: #f6f6f6; }

@@ -150,10 +150,40 @@ a:visited {
 
 .footer {
   width: 100%;
-  height: 316px;
   border-top: #265b4d solid 1px;
+  margin-top: 150px; }
+
+.footer__as-seen-in-container {
+  width: 100%;
+  max-height: auto;
+  height: 340px;
+  background: #f0e5e2;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer__as-seen-in-container--heading {
+  width: 100%;
+  height: 50px;
+  padding: 20px; }
+
+.footer__as-seen-in-container--images {
+  width: 80%;
+  height: 240px;
+  max-height: auto;
+  background: green;
+  display: flex;
+  justify-content: center; }
+
+.popsugar {
+  max-height: 20px; }
+
+.footer__grid {
+  width: 100%;
+  height: 316px;
+  margin-top: -30px;
   display: grid;
-  margin-top: 140px;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%); }
 
@@ -167,9 +197,7 @@ a:visited {
   font-weight: 200;
   font-size: 13.5px;
   font-stretch: narrower;
-  line-height: 1.9;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  line-height: 1.9; }
 
 .footer__second-grid {
   grid-area: 3/5;
@@ -180,9 +208,7 @@ a:visited {
   font-weight: 200;
   font-size: 13.5px;
   font-stretch: narrower;
-  line-height: 1.9;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  line-height: 1.9; }
 
 .footer__second-grid-social-and-text {
   display: flex;
@@ -317,17 +343,19 @@ a:visited {
   margin-bottom: 300px; }
 
 .form__name-input {
-  width: 49%;
+  width: 48%;
   float: left;
   height: 35px;
   font-size: 1em;
+  padding-left: 5px;
   background: #f6f6f6; }
 
 .form__email-input {
-  width: 49%;
+  width: 48%;
   float: right;
   height: 35px;
   font-size: 1em;
+  padding-left: 5px;
   background: #f6f6f6; }
 
 .form__section-two {
@@ -340,14 +368,29 @@ a:visited {
 
 .form__section-two--phone-number {
   margin-top: 20px;
-  width: 99.25%;
+  width: 98.75%;
   height: 35px;
   font-size: 1em;
+  padding-left: 5px;
   background: #f6f6f6; }
 
 .form__section-two--message {
-  width: 99.25%;
+  width: 98.75%;
   margin-top: 20px;
   font-size: 1em;
   height: 300px;
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding-left: 5px;
+  padding-top: 5px; }
+
+.form__section-two-button {
+  height: 46px;
+  width: 90px;
+  background: #265b4d;
+  color: white;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: .7em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: .1em;
+  margin-top: 10px; }

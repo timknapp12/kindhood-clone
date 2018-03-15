@@ -44,7 +44,7 @@ export default class Contact extends Component {
                         <div className='form__section-two' >
                             <input type='text' className='form__section-two--phone-number' placeholder='Phone Number'/>
                             <textarea type='text' placeholder='Message' className='form__section-two--message' ></textarea>
-                            <input type='submit' className='' value='Send' />
+                            <input type='submit' className='form__section-two-button' value='SEND' />
                         </div> 
                     </label>
                 </form>

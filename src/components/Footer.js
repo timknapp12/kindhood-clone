@@ -20,11 +20,11 @@ export default function Footer() {
             <div className='footer__as-seen-in-container' >
                 <div className='footer__as-seen-in-container--heading' >AS SEEN IN</div> 
                 <div className='footer__as-seen-in-container--images' >
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
+                    <img  className='popsugar' alt='popsugar' id='pop' src={popsugar} />
                     <img  className='popsugar' alt='mini' src={mini} />
-                    <img  className='popsugar' alt='vogue' src={vogue} />
-                    <img  className='popsugar' alt='smallfry' src={smallfry} />
-                    <img  className='popsugar' alt='nursery' src={nursery} />
+                    <img  className='popsugar' alt='vogue' id='pop' src={vogue} />
+                    <img  className='popsugar' alt='smallfry' id='pop' src={smallfry} />
+                    <img  className='popsugar' alt='nursery' id='pop' src={nursery} />
                     <img  className='popsugar' alt='babiekins' src={babiekins} />
                     <img  className='popsugar' alt='tatler' src={tatler} />
                 </div> 

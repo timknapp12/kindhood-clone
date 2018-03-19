@@ -174,10 +174,8 @@ a:visited {
   max-height: auto;
   background: green;
   display: flex;
-  justify-content: center; }
-
-.popsugar {
-  max-height: 20px; }
+  justify-content: center;
+  align-items: center; }
 
 .footer__grid {
   width: 100%;

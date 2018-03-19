@@ -4,6 +4,12 @@ import facebook from '../assets/facebook_icon.png';
 import pinterest from '../assets/pinterest_icon.png';
 import insta from '../assets/instagram_icon.png';
 import popsugar from '../assets/popsugar2_compact.png';
+import mini from '../assets/ministylemag_compact.png';
+import vogue from '../assets/britishvouge2_compact.png';
+import smallfry from '../assets/SMALL-FRY-LOGO-04_compact.png';
+import nursery from '../assets/DestinationNurserylogo_compact.png';
+import babiekins from '../assets/babiekins2_compact.png';
+import tatler from '../assets/tatler2_compact.png';
 
 
 export default function Footer() {
@@ -15,12 +21,12 @@ export default function Footer() {
                 <div className='footer__as-seen-in-container--heading' >AS SEEN IN</div> 
                 <div className='footer__as-seen-in-container--images' >
                     <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
-                    <img  className='popsugar' alt='popsugar' src={popsugar} />
+                    <img  className='popsugar' alt='mini' src={mini} />
+                    <img  className='popsugar' alt='vogue' src={vogue} />
+                    <img  className='popsugar' alt='smallfry' src={smallfry} />
+                    <img  className='popsugar' alt='nursery' src={nursery} />
+                    <img  className='popsugar' alt='babiekins' src={babiekins} />
+                    <img  className='popsugar' alt='tatler' src={tatler} />
                 </div> 
             </div> 
             <div className='footer__grid' >

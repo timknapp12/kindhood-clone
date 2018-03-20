@@ -18,8 +18,8 @@ export default function Navbar() {
                  <div  className='nav-itmes__about-li-container'> <li className='nav-itmes__about-li-container_text' >ABOUT US <img className='nav-items__arrow' src={arrow} />
                         <ul className='nav-items__about-dropdown' >
                         <Link to='/about'><li className=''>About Us</li></Link>
-                            <li className=''>Retail Locations</li>
-                            <li className=''>Press</li>
+                            <Link to='/retail' ><li className=''>Retail Locations</li></Link>
+                            <Link to='/press' ><li className=''>Press</li></Link>
                         </ul>
                     </li>
                 </div>

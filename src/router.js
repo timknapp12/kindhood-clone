@@ -6,7 +6,9 @@ import LookBook from './components/LookBook';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Product from './components/Product';
-import RouteProps from 'react-route-props'
+import RouteProps from 'react-route-props';
+import Retail from './components/Retail';
+import Press from './components/Press';
 
 export default(
     <Switch>
@@ -16,5 +18,7 @@ export default(
         <Route path='/faq' component={FAQ}/>
         <Route path='/lookbook' component={LookBook}/>
         <Route path='/product/:id' component={Product}/>
+        <Route path='/retail' component={Retail}/>
+        <Route path='/press' component={Press}/>
     </Switch>
 )

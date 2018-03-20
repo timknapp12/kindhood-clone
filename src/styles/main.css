@@ -68,6 +68,7 @@ table {
   font-weight: normal;
   font-size: .9em;
   letter-spacing: .1em;
+  white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -87,7 +88,7 @@ table {
 
 .nav-items__about-dropdown {
   display: none;
-  animation: about-dropdown .5s ease-in-out forwards;
+  animation: about-dropdown .25s ease-in-out forwards;
   width: 125px;
   background-color: white;
   white-space: nowrap;
@@ -100,8 +101,7 @@ table {
   font-size: 16px; }
 
 .nav-itmes__about-li-container:hover .nav-items__about-dropdown {
-  display: block;
-  color: #265b4d; }
+  display: block; }
 
 .nav-itmes__about-li-container:hover .nav-itmes__about-li-container_text {
   border-bottom: solid 1px #1c1d1d;
@@ -116,6 +116,9 @@ table {
 .nav-items__about-dropdown li {
   margin-top: 0px;
   cursor: pointer; }
+
+.nav-items__about-dropdown li:hover {
+  color: #265b4d; }
 
 a:link {
   color: #1c1d1d;
@@ -457,3 +460,23 @@ a:visited {
   cursor: pointer;
   text-decoration: underline;
   color: #265b4d; }
+
+.press-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.press-container {
+  width: 50%;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.press-container__heading {
+  color: #1c1d1d;
+  letter-spacing: .1em;
+  font-size: 1.57em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.press-container__paragraph {
+  text-align: left; }

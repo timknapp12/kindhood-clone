@@ -29,6 +29,7 @@
     font-weight: normal;
     font-size: .9em;
     letter-spacing: .1em;
+    white-space: nowrap;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -50,7 +51,7 @@
 
 .nav-items__about-dropdown {
     display: none;
-    animation: about-dropdown .5s ease-in-out forwards;
+    animation: about-dropdown .25s ease-in-out forwards;
     width: 125px;
     background-color: white;
     white-space: nowrap;
@@ -65,7 +66,6 @@
 
 .nav-itmes__about-li-container:hover .nav-items__about-dropdown {
     display: block;
-    color: $green_color;
 }
 
 .nav-itmes__about-li-container:hover .nav-itmes__about-li-container_text {
@@ -87,6 +87,10 @@
 .nav-items__about-dropdown li {
     margin-top: 0px;
     cursor: pointer;
+}
+
+.nav-items__about-dropdown li:hover {
+    color: $green_color;
 }
 
 
@@ -495,4 +499,28 @@ a:visited {
     cursor: pointer;
     text-decoration: underline;
     color: $green_color;
+}
+
+//      -----------  Press Page ---------------
+
+.press-body {
+    width: 100%;
+    @include flex;
+}
+
+.press-container {
+    width: 50%;
+    font-family: $main_font;
+}
+
+.press-container__heading {
+    color: $main_color;
+    letter-spacing: .1em;
+    font-size: 1.57em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.press-container__paragraph {
+    text-align: left;
 }

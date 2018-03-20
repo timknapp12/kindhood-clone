@@ -71,6 +71,13 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.nav-items__arrow {
+  height: 7px;
+  width: auto;
+  margin-left: 6px;
+  padding-top: -5px;
+  margin-bottom: 3px; }
+
 a:link {
   color: #1c1d1d;
   text-decoration: none; }

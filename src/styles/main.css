@@ -468,15 +468,35 @@ a:visited {
   align-items: center; }
 
 .press-container {
-  width: 50%;
-  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+  width: 51%;
+  margin-top: 65px;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  line-height: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .press-container__heading {
   color: #1c1d1d;
   letter-spacing: .1em;
-  font-size: 1.57em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: 1.35em;
+  margin-bottom: 45px; }
 
 .press-container__paragraph {
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: .85em; }
+
+.press-container__subheading {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  letter-spacing: .1em;
+  font-size: .95em; }
+
+.press-container__list {
+  list-style-type: disc;
+  text-align: left;
+  font-size: 14px;
+  color: #265b4d;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 17px; }

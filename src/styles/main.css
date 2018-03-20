@@ -406,3 +406,8 @@ a:visited {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: .1em;
   margin-top: 10px; }
+
+.faq-section a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #265b4d; }

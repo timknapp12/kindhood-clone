@@ -24,7 +24,7 @@ export default class Contact extends Component {
                 className="faq-section__icons-description"
                 id="faq-section__secondondary-paragraphs">
                 Want to be a brand rep or Ambassador?  Let us know!  We are always looking for strong social media partners 
-                that match our brand to help us spread the word. Contact us at collabs@kindhood.co and let's chat!.
+                that match our brand to help us spread the word. Contact us at <a>collabs@kindhood.co</a> and let's chat!.
                 </p>
                 <h3 className="faq-section__subheadings">
                 CONTACT US
@@ -33,7 +33,7 @@ export default class Contact extends Component {
                 className="faq-section__icons-description"
                 id="faq-section__secondondary-paragraphs">
                 If you have general questions about the company or product, please send an email to info@kindhood.co. 
-                If you have a question about returns, please send us a note at returns@kindhood.co and we promise to take care of you to the best of our ability.
+                If you have a question about returns, please send us a note at <a>returns@kindhood.co</a> and we promise to take care of you to the best of our ability.
                 </p>
                 <div className='form' >
                 <form>

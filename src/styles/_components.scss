@@ -569,3 +569,44 @@ a:visited {
     letter-spacing: .15em;
     margin-top: 80px;
 }
+
+//     -------------------   Ratail Locations Page --------------------
+.retail-body {
+    width: 100%;
+    @include flex;
+}
+
+.retail-container {
+    width: 51%;
+    margin-top: 65px;
+    font-family: $main_font;
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.retail-container__heading {
+    color: $main_color;
+    letter-spacing: .1em;
+    font-size: 1.35em;
+    margin-bottom: 45px;
+}
+
+.retail-container__paragraph {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: .85em;
+    font-family: $body_font;
+}
+
+.retail-container__paragraph a {
+    color: $green_color;
+    text-decoration: underline;
+}
+
+.retail-container__subheading {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    letter-spacing: .1em;
+    font-size: .95em;
+}

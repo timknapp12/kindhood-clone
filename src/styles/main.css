@@ -518,3 +518,39 @@ a:visited {
   font-size: 1.5em;
   letter-spacing: .15em;
   margin-top: 80px; }
+
+.retail-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.retail-container {
+  width: 51%;
+  margin-top: 65px;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  line-height: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.retail-container__heading {
+  color: #1c1d1d;
+  letter-spacing: .1em;
+  font-size: 1.35em;
+  margin-bottom: 45px; }
+
+.retail-container__paragraph {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: .85em;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.retail-container__paragraph a {
+  color: #265b4d;
+  text-decoration: underline; }
+
+.retail-container__subheading {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  letter-spacing: .1em;
+  font-size: .95em; }

@@ -515,7 +515,6 @@ a:visited {
     line-height: 1.3em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 .press-container__heading {
@@ -548,3 +547,25 @@ a:visited {
     margin-left: 17px;
 }
 
+//     ------------------      About Page ----------------
+
+.about-paragraphs {
+    font-family: $body_font;
+    text-align: left;
+    font-size: .9em;
+    width: 80%;
+    line-height: 1.7em;
+}
+
+.about-paragraphs p {
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+.about-subheading {
+    text-align: center;
+    font-family: $main_font;
+    font-size: 1.5em;
+    letter-spacing: .15em;
+    margin-top: 80px;
+}

@@ -1,3 +1,28 @@
+This is a clone of an already existing e-commerce site. I built it with React, Node, and Postgres. I had 3 objectives with this project:
+1) Demonstrate the ability to use CSS/SCSS to build UI based on an already-made design and layout.
+2) Implement new skills that I'm continuously learning on my own
+3) Practice skills that I have already learned
+
+The new things I worked on:
+carousel
+node mailer
+search function
+state without constructor
+
+
+Things that I have practiced:
+scss
+css grid
+flexbox
+database
+map function
+keyframes for the dropdown menu
+media queries
+put an input box inside an image
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

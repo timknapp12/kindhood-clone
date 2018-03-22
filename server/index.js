@@ -39,6 +39,11 @@ app.get('/api/products/:id', (req, res, next) => {
     .then(product => res.status(200).send(product))
 }) 
 
+app.get('/api/locations', (req, res, next) => {
+    const db = req.app.get('db');
+
+    db.locations().then(locations => res.status(200).send(locations))
+})
 
 
 app.listen(port, () => console.log(`listening on port ${port}`));

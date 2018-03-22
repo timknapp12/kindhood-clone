@@ -15,7 +15,7 @@ export default function Navbar() {
                 <ul className='nav-itmes'>
                  <Link to='/'><li>SHOP</li></Link>
                  <Link to='lookbook'><li>LOOK BOOK</li></Link>
-                 <div  className='nav-itmes__about-li-container'> <li className='nav-itmes__about-li-container_text' >ABOUT US <img className='nav-items__arrow' src={arrow} />
+                 <div  className='nav-itmes__about-li-container'> <li className='nav-itmes__about-li-container_text' >ABOUT US <img alt='arrow-icon' className='nav-items__arrow' src={arrow} />
                         <ul className='nav-items__about-dropdown' >
                         <Link to='/about'><li className=''>About Us</li></Link>
                             <Link to='/retail' ><li className=''>Retail Locations</li></Link>

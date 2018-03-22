@@ -1,20 +1,29 @@
 import React from "react";
 import axios from 'axios';
 
-export default class Retail extends React.Component() {
+export default class Retail extends React.Component {
 
-    state={retailLocations: []}
+    state={locations: []}
+
+    async getLocations() {
+        const locations = await axios.get('/api/locations');
+        return locations.data
+    }
 
     componentDidMount = () => {
-      async function getLocations() {
-        const locations = await axios.get('/api/locations');
-        this.setState({retailLocations: locations})
-      }
-    }
+        this.getLocations().then(locations => 
+            this.setState({locations: locations}))
+        
+        }
+      
+    
     
 
   render() {
+      console.log(this.state.locations);
+      const retailLocations = this.state.locations
     return (
+
       <div className="retail-body">
         <div className="retail-container">
           <h3 className="retail-container__heading">KINDHOOD RETAILERS</h3>
@@ -41,9 +50,13 @@ export default class Retail extends React.Component() {
             about how to partner with Kindhood.
           </p>
           <div className="retail-container__location-container">
-            <span className="" />
-            <span className="" />
-            <span className="" />
+            {retailLocations.map(item => {
+                return <div key={item.location_id} >
+                        <h6>{item.state_name}</h6>
+                        <h6>{item.store_name}</h6>
+                        <h6>{item.city}</h6>
+                       </div> 
+            })}
           </div>
         </div>
       </div>

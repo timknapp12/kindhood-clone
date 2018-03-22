@@ -6,7 +6,6 @@ import LookBook from './components/LookBook';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Product from './components/Product';
-import RouteProps from 'react-route-props';
 import Retail from './components/Retail';
 import Press from './components/Press';
 

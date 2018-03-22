@@ -8,7 +8,7 @@ carousel
 node mailer
 search function
 state without constructor
-
+async await
 
 Things that I have practiced:
 scss

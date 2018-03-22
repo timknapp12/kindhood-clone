@@ -7,7 +7,7 @@ export default class Contact extends Component {
       <div className="main-body">
         <div className="main-container">
           <div className="main-container__column">
-            <img src={contact} className="main-image" />
+            <img alt='contact' src={contact} className="main-image" />
             <div className="faq-section">
                 <h3 className="faq-section__subheadings" id="first-subheading">
                     WHOLESALE INQUIRES

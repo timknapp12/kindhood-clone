@@ -6,7 +6,7 @@ export default function LookBook() {
 
     return(
         <div  >
-            <img src={Lookbook} className='Lookbook-container' />
+            <img alt='lookbook' src={Lookbook} className='Lookbook-container' />
         </div> 
     )
 }

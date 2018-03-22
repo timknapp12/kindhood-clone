@@ -20,6 +20,8 @@ keyframes for the dropdown menu
 media queries
 put an input box inside an image
 
+Challenges:
+mapping through the locations
 
 
 

@@ -7,6 +7,7 @@
 
 .main-logo {
     margin-left: 130px;
+    cursor: pointer;
 }
 
 .nav-container {
@@ -642,4 +643,17 @@ a:visited {
     text-decoration: underline;
     color: $green_color;
     font-weight: 800;
+}
+
+//    --------------   HOME COMPONENT -----------------
+
+.carousel-photo {
+    width: auto;
+    height: 100vh;
+    margin-top: -160px;
+    z-index: -1;
+    background-image: url('../assets/girl-in-hoodie.jpeg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }

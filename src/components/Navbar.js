@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return(
         <div className='nav'>
-            <img className='main-logo' src={logo} alt='main-logo'/>
+            <Link to='home'><img className='main-logo' src={logo} alt='main-logo'/></Link>
             <div className='nav-container'> 
             <p className='disclaimer'>this is not a real website, just a clone for practice</p>
                 <ul className='nav-itmes'>

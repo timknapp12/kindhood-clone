@@ -8,11 +8,13 @@ import Contact from './components/Contact';
 import Product from './components/Product';
 import Retail from './components/Retail';
 import Press from './components/Press';
+import Home from './components/Home';
 
 export default(
     <Switch>
         <Route path='/' exact component={Shop}/>
         <Route path='/about' component={About}/>
+        <Route path='/home' component={Home}/>
         <Route path='/contact' component={Contact}/>
         <Route path='/faq' component={FAQ}/>
         <Route path='/lookbook' component={LookBook}/>

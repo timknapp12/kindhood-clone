@@ -44,7 +44,7 @@ const Home = () => {
       >
         <Slider>
           <Slide index={0}>I am the first Slide.<img src={photo1} /></Slide>
-          <Slide index={1}>I am the second Slide.<img src={photo2} /></Slide>
+          <Slide index={1}>I am the second Slide. Why is this not working<img src={photo2} /></Slide>
           <Slide index={2}>I am the third Slide. <img src={photo3} /></Slide>
         </Slider>
         <ButtonBack>Back</ButtonBack>

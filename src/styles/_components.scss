@@ -173,7 +173,7 @@ a:visited {
 
 .products-section__container {
     width: 30%;
-    display: inline-block;
+    // display: inline-block;
     float: left;
     margin: 12px;
 }
@@ -369,9 +369,9 @@ a:visited {
     width: 90%;
 }
 
-.faq-section__icons-image {
+// .faq-section__icons-image {
 
-}
+// }
 
 .faq-section__icons-description {
     margin-left: 10px;
@@ -612,6 +612,34 @@ a:visited {
 }
 
 .retail-container__location-container {
-    
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -120px;
 }
 
+.retail-container__location-container--groups {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    font-family: $main_font;
+    font-size: 14px;
+}
+
+.retail-container__location-container--groups__states {
+    font-weight: 800;
+}
+
+.retail-container__location-container--groups__cities {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.retail-container__location-container--groups__cities--stores {
+    text-decoration: underline;
+    color: $green_color;
+    font-weight: 800;
+}

@@ -4,11 +4,13 @@ This is a clone of an already existing e-commerce site. I built it with React, N
 3) Practice skills that I have already learned
 
 The new things I worked on:
-carousel
-node mailer
-search function
+CAROUSEL
+NODE MAILER
 state without constructor
 async await
+SEARCH FUNCTION
+ROUTING BASED ON PARAMS
+BEM naming conventions
 
 Things that I have practiced:
 scss
@@ -17,7 +19,7 @@ flexbox
 database
 map function
 keyframes for the dropdown menu
-media queries
+MEDIA QUERIES
 put an input box inside an image
 
 Challenges:

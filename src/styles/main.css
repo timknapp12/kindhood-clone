@@ -183,7 +183,6 @@ a:visited {
 
 .products-section__container {
   width: 30%;
-  display: inline-block;
   float: left;
   margin: 12px; }
 
@@ -554,3 +553,37 @@ a:visited {
   margin-bottom: 30px;
   letter-spacing: .1em;
   font-size: .95em; }
+
+.retail-container__location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -120px; }
+
+.retail-container__location-container--groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 70px;
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 14px; }
+
+.retail-container__location-container--groups__states {
+  font-weight: 800; }
+
+.retail-container__location-container--groups__cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px; }
+
+.retail-container__location-container--groups__cities--stores {
+  text-decoration: underline;
+  color: #265b4d;
+  font-weight: 800; }

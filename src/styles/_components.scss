@@ -647,13 +647,23 @@ a:visited {
 
 //    --------------   HOME COMPONENT -----------------
 
-.carousel-photo {
-    width: auto;
-    height: 100vh;
-    margin-top: -160px;
-    z-index: -1;
-    background-image: url('../assets/girl-in-hoodie.jpeg');
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
+.home-body {
+    display: flex;
+    justify-content: center;
+}
+// .carousel-photo {
+//     width: auto;
+//     height: 100vh;
+//     margin-top: -160px;
+//     z-index: -1;
+//     background-image: url('../assets/girl-in-hoodie.jpeg');
+//     background-size: cover;
+//     background-position-x: center;
+//     background-repeat: no-repeat;
+// }
+
+.carousel-provider {
+    background: red;
+    display: flex;
+    flex-direction: column;
 }

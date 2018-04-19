@@ -4,6 +4,7 @@
   "private": true,
   "main": "./server/index.js",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.0.5",
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -15,7 +16,9 @@
     "npm-run-all": "^4.1.2",
     "pure-react-carousel": "^1.12.1",
     "react": "^16.2.0",
+    "react-background-slideshow": "^1.0.3",
     "react-bootstrap": "^0.32.1",
+    "react-coverflow": "^0.2.14",
     "react-dom": "^16.2.0",
     "react-responsive-carousel": "^3.1.36",
     "react-route-props": "^1.0.4",

@@ -3,6 +3,8 @@
 
 .nav {
     @include flex;
+    position: relative;
+    z-index: 1000;
 }
 
 .main-logo {
@@ -647,10 +649,10 @@ a:visited {
 
 //    --------------   HOME COMPONENT -----------------
 
-.home-body {
-    display: flex;
-    justify-content: center;
-}
+// .home-body {
+//     display: flex;
+//     justify-content: center;
+// }
 // .carousel-photo {
 //     width: auto;
 //     height: 100vh;
@@ -665,5 +667,26 @@ a:visited {
 .carousel-provider {
     background: red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: hidden;
 }
+
+// .react-carousel {
+//     max-width: 1500px;
+//     width: auto;
+//     max-height: 700px;
+//     height: auto;
+//     overflow: hidden;
+//     margin-top: -160px;
+//     position: relative;
+// }
+
+// .react-carousel__inner {
+//     display: flex;
+//     position: absolute;
+//     left: -1000px;
+// }
+
+// .background-slideshow {
+//     z-index: -1000;
+// }

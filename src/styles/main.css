@@ -44,7 +44,9 @@ table {
 .nav {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  z-index: 1000; }
 
 .main-logo {
   margin-left: 130px;
@@ -589,11 +591,8 @@ a:visited {
   color: #265b4d;
   font-weight: 800; }
 
-.home-body {
-  display: flex;
-  justify-content: center; }
-
 .carousel-provider {
   background: red;
   display: flex;
-  flex-direction: column; }
+  flex-direction: row;
+  overflow: hidden; }

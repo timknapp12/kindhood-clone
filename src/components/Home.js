@@ -25,7 +25,11 @@ export default class Home extends Component {
 
     return (
       <div className="home-body">
-        <Carousel className="slick">
+        <Carousel 
+        autoplay={true}
+        wrapAround = {true}
+        autoplayInterval={4000}
+        className="slick">
             {photos}
         </Carousel>
 

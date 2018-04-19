@@ -649,10 +649,25 @@ a:visited {
 
 //    --------------   HOME COMPONENT -----------------
 
-// .home-body {
-//     display: flex;
-//     justify-content: center;
-// }
+.home-body {
+   @include flex;
+    width: 100%;
+}
+
+.slick {
+    // @include flex;
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    margin-top: -160px;
+}
+
+.slick img {
+    width: 99.5%;
+    height: 100vh;
+}
+
 // .carousel-photo {
 //     width: auto;
 //     height: 100vh;
@@ -690,3 +705,4 @@ a:visited {
 // .background-slideshow {
 //     z-index: -1000;
 // }
+

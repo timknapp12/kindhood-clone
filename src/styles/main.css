@@ -591,6 +591,23 @@ a:visited {
   color: #265b4d;
   font-weight: 800; }
 
+.home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.slick {
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  margin-top: -160px; }
+
+.slick img {
+  width: 99.5%;
+  height: 100vh; }
+
 .carousel-provider {
   background: red;
   display: flex;

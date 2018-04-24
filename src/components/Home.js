@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BackgroundSlideshow from "react-background-slideshow";
+// import BackgroundSlideshow from "react-background-slideshow";
 import Carousel from 'nuka-carousel';
 import photo1 from "../assets/girl-in-hoodie.jpeg";
 import photo2 from "../assets/mom-pool.jpeg";
@@ -18,7 +18,7 @@ export default class Home extends Component {
     const photos = this.state.photos.map((photo, i) => {
         return(
             <div key={i} >
-                <img src={photo} />
+                <img src={photo} alt='home page'/>
             </div> 
         )
     })

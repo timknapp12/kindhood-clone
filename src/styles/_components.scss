@@ -686,23 +686,42 @@ a:visited {
     overflow: hidden;
 }
 
-// .react-carousel {
-//     max-width: 1500px;
-//     width: auto;
-//     max-height: 700px;
-//     height: auto;
-//     overflow: hidden;
-//     margin-top: -160px;
-//     position: relative;
-// }
+//   ---------  PRODUCT COMPONENT DISPLAYING INDIVIDAUL PRODUCTS -----------
+// I already used 'product' for classnames in 'shop' component so have to change it up here
 
-// .react-carousel__inner {
-//     display: flex;
-//     position: absolute;
-//     left: -1000px;
-// }
+.image-body {
+    @include flex;
+}
 
-// .background-slideshow {
-//     z-index: -1000;
-// }
+.images-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background: red;
+    align-items: center;
+}
 
+.images-container__selected-photo {
+    min-height: 120vh;
+    width: auto;
+}
+
+.images-container__small-photos {
+    @include flex;
+    max-height: 100px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.images-container__small-photos--image {
+    max-height: 100px;
+    width: auto;
+}
+
+.image-text-container {
+    width: 40%;
+    height: 135vh;
+    background: blue;
+}

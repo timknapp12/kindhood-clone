@@ -6,35 +6,48 @@ export default class Product extends Component {
     //     super(props);
 
         state = {
-            product: []
+            product: [],
+            images: [],
+            selectedPhoto: ''
         }
 
     componentDidMount = () => {
         console.log(this.props.match.params.id)
         console.log(this.state.product)
       axios.get(`/api/products/${this.props.match.params.id}`).then((res) => {
-          this.setState({product: res.data[0]})
+          this.setState({product: res.data[0], selectedPhoto: res.data[0].product_image1})
       })
     }    
   
 
     render(){
         console.log(this.state.product)
-        return(
-            <div>
-                <div> 
-                    <img src={this.state.product.product_image1} alt='image1'/>
-                    <div>
-                        <img src={this.state.product.product_image2} alt='image2'/>
-                        <img src={this.state.product.product_image3} alt='image3'/>
-                        <img src={this.state.product.product_image4} alt='image4'/>
-                        <img src={this.state.product.product_image5} alt='image5'/>
-                    </div> 
-                </div>
-                <div>
-                    <h2>{this.state.product.product_name}</h2>
-                    <h4>{this.state.product.product_price}</h4>
+        const {product_image1, product_image2, product_image3, product_image4, product_image5} = this.state.product
+        const images = this.state.images.slice();
+        images.push([product_image1, product_image2, product_image3, product_image4, product_image5])
+        console.log(images[0])
+        const list = images[0].map((image, i) => {
+            return(
+                <div key={i}>
+                    <img src={image} className='images-container__small-photos--image'/>
                 </div> 
+            )
+        })
+
+        return(
+            <div className='image-body'>
+                <section className='images-container' > 
+                    <img className='images-container__selected-photo' src={this.state.selectedPhoto} alt='image1'/>
+                    <div className='images-container__small-photos' >
+                        {list}
+                    </div> 
+                </section>
+                <select className='image-text-container' > 
+                    <div>
+                        <h2>{this.state.product.product_name}</h2>
+                        <h4>{this.state.product.product_price}</h4>
+                    </div> 
+                </select>
             </div> 
         )
     }

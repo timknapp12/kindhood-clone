@@ -613,3 +613,38 @@ a:visited {
   display: flex;
   flex-direction: row;
   overflow: hidden; }
+
+.image-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background: red;
+  align-items: center; }
+
+.images-container__selected-photo {
+  min-height: 120vh;
+  width: auto; }
+
+.images-container__small-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100px;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  background: black; }
+
+.images-container__small-photos--image {
+  max-height: 100px;
+  width: auto; }
+
+.image-text-container {
+  width: 40%;
+  height: 135vh;
+  background: blue; }

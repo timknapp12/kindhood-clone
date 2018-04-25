@@ -4,23 +4,24 @@ This is a clone of an already existing e-commerce site. I built it with React, N
 3) Practice skills that I have already learned
 
 The new things I worked on:
-CAROUSEL
-NODE MAILER
-state without constructor
-async await
-SEARCH FUNCTION
-ROUTING BASED ON PARAMS
-BEM naming conventions
+1) carousel images --> on the 'Home' Component accessed by clicking on the Logo in the Navbar
+2) NODE MAILER
+3) state without constructor function --> in several class components ie 'Product' Component
+async await   --> on the component did mount lifecycle method in the 'Product' Component and also    found in 'Retail' Component to find 'store locations'
+4) routing based on params --> `/api/products/${this.props.match.params.id}` used in 'Product'       Component and linked to from individual products found in the 'Shop' Component--> <Link to=          {`/product/${item.product_id}`}></Link>
+5) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
+6) CSS - letter-spacing --> the site I cloned uses it often on titles and main texts and I learned that it gives it a neat, clean, and professional look.
+) SEARCH FUNCTION
 
-Things that I have practiced:
-scss
-css grid
-flexbox
-database
-map function
-keyframes for the dropdown menu
-MEDIA QUERIES
-put an input box inside an image
+Things that I practiced:
+1) scss
+2) css grid --> used on the social icons and input field in the 'Footer' Component
+3) flexbox
+4) database --> Heroku, Postgres, Massive
+5) map function --> used in 'Product', 'Retail', 'Shop', 'Press' Components
+6) keyframes for the dropdown menu --> found in the 'Navbar' Component
+7) MEDIA QUERIES
+8) put an input box inside an image using position properties --> found in the 'Footer' Component
 
 Challenges:
 mapping through the locations

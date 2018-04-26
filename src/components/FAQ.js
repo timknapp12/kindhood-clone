@@ -139,7 +139,6 @@ export default function FAQ(props) {
               className="faq-section__subheadings"
               id="faq-section__last-heading"
             >
-              {" "}
               AND WHAT AGE RANGES DOES EACH FIT?
             </h3>
             <ul type="square" className="faq-section__sizes">

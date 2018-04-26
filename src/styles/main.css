@@ -641,17 +641,17 @@ a:visited {
   justify-content: center;
   align-items: center;
   max-height: 100px;
-  width: 50%;
-  justify-content: space-between;
-  align-items: center;
-  background: black; }
+  min-width: 50%;
+  justify-content: flex-start;
+  margin-top: 10px; }
 
 .images-container__small-photos--image {
   max-height: 100px;
-  width: auto; }
+  width: auto;
+  margin-left: 15px; }
 
 .image-text-container {
-  width: 35%;
+  width: 30%;
   height: 135vh;
   margin-top: 50px;
   font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
@@ -660,7 +660,8 @@ a:visited {
 
 .image-text-container__title {
   font-size: 2.3em;
-  letter-spacing: .05em; }
+  letter-spacing: .05em;
+  line-height: 1.3em; }
 
 .image-text-container__price {
   font-size: 1.2em;
@@ -690,3 +691,20 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: .1em; }
+
+.image-text-container__paragraph {
+  margin-top: 25px;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
+  text-align: left; }
+
+.size-chart-div {
+  display: flex;
+  width: 100%; }
+
+.size-chart-div-hidden {
+  display: none; }
+
+#image-text-container__size-chart {
+  margin-top: 30px; }

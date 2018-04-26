@@ -4,24 +4,26 @@ This is a clone of an already existing e-commerce site. I built it with React, N
 3) Practice skills that I have already learned
 
 The new things I worked on:
-1) carousel images --> on the 'Home' Component accessed by clicking on the Logo in the Navbar
+1) carousel images --> on the Home.js, and the UI is accessed by clicking on the Logo in the Navbar
 2) NODE MAILER
-3) state without constructor function --> in several class components ie 'Product' Component
-async await   --> on the component did mount lifecycle method in the 'Product' Component and also    found in 'Retail' Component to find 'store locations'
-4) routing based on params --> `/api/products/${this.props.match.params.id}` used in 'Product'       Component and linked to from individual products found in the 'Shop' Component--> <Link to=          {`/product/${item.product_id}`}></Link>
-5) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
-6) CSS - letter-spacing --> the site I cloned uses it often on titles and main texts and I learned that it gives it a neat, clean, and professional look.
+3) state without constructor function --> in several class components ie Product.js
+async await   --> on the component did mount lifecycle method in Product.js and also    found in Retail.js to find 'store locations'
+4) routing based on params --> `/api/products/${this.props.match.params.id}` used in Product.js and linked to from individual products found in the Shop.js --> <Link to=          {`/product/${item.product_id}`}></Link>
+5) made a reusable component --> Product.js, displays different product props dependng on params
+6) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
+7) CSS - letter-spacing and line-height --> the site I cloned uses both often on titles and main texts and I observed that it gives it a neat, clean, and professional look.
+8) ternary to control UI Display --> found in Product.js line 65
 ) SEARCH FUNCTION
 
 Things that I practiced:
-1) scss
-2) css grid --> used on the social icons and input field in the 'Footer' Component
-3) flexbox
+1) scss --> variables, mixins
+2) css grid --> used on lower half of the Footer.js and found in _components.scss line 252
+3) flexbox --> used for almost all styling
 4) database --> Heroku, Postgres, Massive
-5) map function --> used in 'Product', 'Retail', 'Shop', 'Press' Components
-6) keyframes for the dropdown menu --> found in the 'Navbar' Component
+5) map function --> used in Product.js, Retail.js, Shop.js, and Press.js
+6) keyframes for the dropdown menu --> found in the Navbar.js and _components.scss line 80
 7) MEDIA QUERIES
-8) put an input box inside an image using position properties --> found in the 'Footer' Component
+8) put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
 
 Challenges:
 mapping through the locations

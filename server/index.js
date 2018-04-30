@@ -6,6 +6,7 @@ const session = require('express-session');
 const cors = require('cors');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
+const cred = require('../config/config');
 
 const port = 4000
 
@@ -55,15 +56,16 @@ app.get('/api/locations', (req, res, next) => {
 
 // Nodemailer
 const transport = {
-    host: 'smtp-mail.outlook.com',
+    host: 'smtp.live.com',
+    // service: 'Gmail',
     secure: false,
     port: 587,
     auth: {
-        user: process.env.USER,
-        pass: process.env.PASS
+        user: '',
+        pass: ''
     },
     tls: {
-        rejectunauthorized: false
+        rejectUnauthorized: false
     }
 }
 
@@ -74,15 +76,10 @@ transporter.verify((error, success) => {
         console.log(error);
     } else {
         console.log('server is ready to take messages')
+        console.log(cred.USER)
     }
 })
 
-app.get('/', function(req, res){
-    res.render('form');// if jade
-    // You should use one of line depending on type of frontend you are with
-    res.sendFile(__dirname + '/form.html'); //if html file is root directory
-//    res.sendFile("index.html"); //if html file is within public directory
-  });
 
 app.post('/send', (req, res, next) => {
     const email = req.body.email

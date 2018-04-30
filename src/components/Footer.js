@@ -15,17 +15,14 @@ import axios from 'axios';
 export default class Footer extends Component {
 
     handleSubmit(e){
+        console.log('submit fired')
         e.preventDefault();
-        const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
         axios({
             method: "POST", 
-            url:"http://localhost:3002/send", 
+            url:"http://localhost:4000/send", 
             data: {
-                name: name,   
-                email: email,  
-                messsage: message
+                email: email
             }
         }).then((response)=>{
             if (response.data.msg === 'success'){
@@ -35,6 +32,10 @@ export default class Footer extends Component {
                 alert("Message failed to send.")
             }
         })
+    }
+
+    resetForm(){
+        document.getElementById('contact-form').reset();
     }
 
     render() {

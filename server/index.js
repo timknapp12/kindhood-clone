@@ -53,9 +53,64 @@ app.get('/api/locations', (req, res, next) => {
     db.locations().then(locations => res.status(200).send(locations))
 })
 
-app.post('/send', (req, res) => {
-    console.log(req.body);
+// Nodemailer
+const transport = {
+    host: 'smtp-mail.outlook.com',
+    secure: false,
+    port: 587,
+    auth: {
+        user: process.env.USER,
+        pass: process.env.PASS
+    },
+    tls: {
+        rejectunauthorized: false
+    }
+}
+
+const transporter = nodemailer.createTransport(transport)
+
+transporter.verify((error, success) => {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log('server is ready to take messages')
+    }
 })
+
+app.get('/', function(req, res){
+    res.render('form');// if jade
+    // You should use one of line depending on type of frontend you are with
+    res.sendFile(__dirname + '/form.html'); //if html file is root directory
+//    res.sendFile("index.html"); //if html file is within public directory
+  });
+
+app.post('/send', (req, res, next) => {
+    const email = req.body.email
+    const content = `email: ${email}`
+  
+    const mail = {
+      from: name,
+      to: 'timknapp12@gmail.com',  //Change to email address that you want to receive messages on
+      subject: 'New Message from Contact Form',
+      text: content
+    }
+  
+    transporter.sendMail(mail, (err, data) => {
+      if (err) {
+        res.json({
+          msg: 'fail'
+        })
+      } else {
+        res.json({
+          msg: 'success'
+        })
+      }
+    })
+  })
+
+// app.post('/send', (req, res) => {
+//     console.log(req.body);
+// })
 
 const path = require("path");
 app.get("*", (req, res) => {

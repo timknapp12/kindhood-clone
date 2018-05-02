@@ -83,10 +83,10 @@ export default class Footer extends Component {
                     <div className='footer__newsletter' >
                         <img className='footer__newsletter__image' alt='newsletter' src={newsletter}/>
                         <div className='footer__newletter__input-and-button-div' > 
-                            <form id='contact-form' onSubmit={() => this.handleSubmit()} method='POST' > 
+                            {/* <form id='contact-form' onSubmit={() => this.handleSubmit()} method='POST' >  */}
                                 <input  type='email' name='email' action='send' className='footer__newsletter__input' />
                                 <button type='submit' className='footer__newsletter__button'>SUBSCRIBE</button>
-                            </form>
+                            {/* </form> */}
                         </div>
                     </div> 
                     <div>

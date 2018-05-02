@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/main_logo.png';
-import searchIcon from '../assets/search_icon.png';
-import cartIcon from '../assets/cart_icon2.png';
+import searchIcon from '../assets/search_icon2.png';
+import cartIcon from '../assets/cart_icon3.png';
 import { Link } from 'react-router-dom';
 import arrow from '../assets/arrow_icon.svg';
 

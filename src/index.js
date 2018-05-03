@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
@@ -10,4 +10,4 @@ ReactDOM.render(
         <App />
     </BrowserRouter>
 , document.getElementById('root'));
-registerServiceWorker();
+unregister();

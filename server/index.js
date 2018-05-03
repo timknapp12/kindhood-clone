@@ -7,12 +7,12 @@ const cors = require('cors');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const cred = require('../config/config');
+const path = require("path");
 
-const port = 4000
+const port = 8030
 
 const app = express();
 app.use( express.static( `${__dirname}/../build` ) );
-
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -109,7 +109,6 @@ app.post('/send', (req, res, next) => {
 //     console.log(req.body);
 // })
 
-const path = require("path");
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build/index.html"));
 });

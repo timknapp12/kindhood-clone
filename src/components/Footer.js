@@ -20,7 +20,7 @@ export default class Footer extends Component {
         const email = document.getElementById('email').value;
         axios({
             method: "POST", 
-            url:"http://localhost:4000/send", 
+            url:"http://localhost:8030/send", 
             data: {
                 email: email
             }

@@ -32,6 +32,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
     app.set('db', db);
 });
 
+
 app.get('/api/products', (req, res, next) => {
     const db = req.app.get('db');
 

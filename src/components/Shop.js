@@ -11,9 +11,9 @@ export default class Shop extends Component {
     products: []
   };
 
-  displayProducts() {
-    axios.get("/api/products").then(res => res.data);
-  }
+  // displayProducts() {
+  //   axios.get("/api/products").then(res => res.data);
+  // }
 
   componentWillMount() {
     console.log(this.state.user);

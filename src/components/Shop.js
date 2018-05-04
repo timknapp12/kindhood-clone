@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
 import axios from "axios";
-import { displayProducts } from "./services";
+// import { displayProducts } from "./services";
 import { Link } from "react-router-dom";
 
 export default class Shop extends Component {

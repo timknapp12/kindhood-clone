@@ -46,12 +46,14 @@ app.get('/api/products/:id', (req, res, next) => {
 
     db.get_product([req.params.id])
     .then(product => res.status(200).send(product))
+    .catch(() => res.status(500).send());
 }) 
 
 app.get('/api/locations', (req, res, next) => {
     const db = req.app.get('db');
 
     db.locations().then(locations => res.status(200).send(locations))
+    .catch(() => res.status(500).send());
 })
 
 // Nodemailer

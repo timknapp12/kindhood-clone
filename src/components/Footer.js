@@ -10,33 +10,9 @@ import smallfry from '../assets/SMALL-FRY-LOGO-04_compact.png';
 import nursery from '../assets/DestinationNurserylogo_compact.png';
 import babiekins from '../assets/babiekins2_compact.png';
 import tatler from '../assets/tatler2_compact.png';
-import axios from 'axios';
 
 export default class Footer extends Component {
 
-    // handleSubmit(e){
-    //     console.log('submit fired')
-    //     e.preventDefault();
-    //     const email = document.getElementById('email').value;
-    //     axios({
-    //         method: "POST", 
-    //         url:"http://localhost:8030/send", 
-    //         data: {
-    //             email: email
-    //         }
-    //     }).then((response)=>{
-    //         if (response.data.msg === 'success'){
-    //             alert("Message Sent."); 
-    //             this.resetForm()
-    //         }else if(response.data.msg === 'fail'){
-    //             alert("Message failed to send.")
-    //         }
-    //     })
-    // }
-
-    // resetForm(){
-    //     document.getElementById('contact-form').reset();
-    // }
 
     render() {
 

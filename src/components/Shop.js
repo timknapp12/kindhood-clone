@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
 import axios from "axios";
-// import { displayProducts } from "./services";
+import { displayProducts } from "./services";
 import { Link } from "react-router-dom";
 
 export default class Shop extends Component {
@@ -17,7 +17,7 @@ export default class Shop extends Component {
 
   componentWillMount() {
     console.log(this.state.user);
-    this.displayProducts().then(res => {
+    displayProducts().then(res => {
       this.setState({ products: res });
     });
     console.log(this.state.products);

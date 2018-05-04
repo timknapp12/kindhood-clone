@@ -5,7 +5,6 @@ const massive = require('massive');
 const session = require('express-session');
 const cors = require('cors');
 const exphbs = require('express-handlebars');
-// const nodemailer = require('nodemailer');
 const cred = require('../config/config');
 const path = require("path");
 
@@ -56,31 +55,6 @@ app.get('/api/locations', (req, res, next) => {
     .catch(() => res.status(500).send());
 })
 
-// Nodemailer
-const transport = {
-    host: 'smtp.live.com',
-    // service: 'Gmail',
-    secure: false,
-    port: 587,
-    auth: {
-        user: '',
-        pass: ''
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-}
-
-// const transporter = nodemailer.createTransport(transport)
-
-// transporter.verify((error, success) => {
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log('server is ready to take messages')
-//         console.log(cred.USER)
-//     }
-// })
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build/index.html"));

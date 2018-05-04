@@ -5,7 +5,7 @@ const massive = require('massive');
 const session = require('express-session');
 const cors = require('cors');
 const exphbs = require('express-handlebars');
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 const cred = require('../config/config');
 const path = require("path");
 
@@ -69,44 +69,15 @@ const transport = {
     }
 }
 
-const transporter = nodemailer.createTransport(transport)
+// const transporter = nodemailer.createTransport(transport)
 
-transporter.verify((error, success) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log('server is ready to take messages')
-        console.log(cred.USER)
-    }
-})
-
-
-app.post('/send', (req, res, next) => {
-    const email = req.body.email
-    const content = `email: ${email}`
-  
-    const mail = {
-      from: name,
-      to: 'timknapp12@gmail.com',  //Change to email address that you want to receive messages on
-      subject: 'New Message from Contact Form',
-      text: content
-    }
-  
-    transporter.sendMail(mail, (err, data) => {
-      if (err) {
-        res.json({
-          msg: 'fail'
-        })
-      } else {
-        res.json({
-          msg: 'success'
-        })
-      }
-    })
-  })
-
-// app.post('/send', (req, res) => {
-//     console.log(req.body);
+// transporter.verify((error, success) => {
+//     if (error) {
+//         console.log(error);
+//     } else {
+//         console.log('server is ready to take messages')
+//         console.log(cred.USER)
+//     }
 // })
 
 app.get("*", (req, res) => {

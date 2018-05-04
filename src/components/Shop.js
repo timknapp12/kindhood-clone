@@ -17,7 +17,7 @@ export default class Shop extends Component {
 
   componentWillMount() {
     console.log(this.state.user);
-    displayProducts().then(res => {
+    this.displayProducts().then(res => {
       this.setState({ products: res });
     });
     console.log(this.state.products);

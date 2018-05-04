@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import mainImage from "../assets/main_img.jpg";
-import axios from "axios";
+// import axios from "axios";
 import { displayProducts } from "./services";
 import { Link } from "react-router-dom";
 

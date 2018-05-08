@@ -39,7 +39,7 @@ export default class Product extends Component {
         const list = images[0].map((image, i) => {
             return(
                 <div key={i}>
-                    <img src={image} className='images-container__small-photos--image' alt='product'
+                    <img src={image} className='images-container__small-photos--image' alt=''
                     onClick={() => this.changePhoto(image)}/>
                 </div> 
             )

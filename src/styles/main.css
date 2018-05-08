@@ -618,7 +618,8 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  align-items: flex-start; }
 
 .images-container {
   display: flex;
@@ -633,7 +634,8 @@ a:visited {
   flex-direction: column; }
 
 .images-container__selected-photo {
-  min-height: 120vh;
+  max-width: 90%;
+  height: auto;
   width: auto; }
 
 .images-container__small-photos {

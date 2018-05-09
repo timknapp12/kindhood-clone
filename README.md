@@ -21,8 +21,7 @@ Things that I practiced:
 4) database --> Heroku, Postgres, Massive
 5) map function --> used in Product.js, Retail.js, Shop.js, and Press.js
 6) keyframes for the dropdown menu --> found in the Navbar.js and _components.scss line 80
-7) MEDIA QUERIES
-8) put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
+7) put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
 
 Challenges:
 mapping through the locations

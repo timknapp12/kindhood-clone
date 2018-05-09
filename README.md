@@ -6,12 +6,12 @@ This is a clone of an already existing e-commerce site. I built it with React, N
 The new things I worked on:
 1) carousel images --> on the Home.js, and the UI is accessed by clicking on the Logo in the Navbar
 2) state without constructor function --> in several class components ie Product.js
-async await   --> on the component did mount lifecycle method in Product.js and also    found in Retail.js to find 'store locations'
-3) routing based on params --> `/api/products/${this.props.match.params.id}` used in Product.js and linked to from individual products found in the Shop.js --> <Link to={`/product/${item.product_id}`}></Link>
-4) made a reusable component --> Product.js, displays different product props dependng on params
-5) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
-6) CSS - letter-spacing and line-height --> the site I cloned uses both often on titles and main texts and I observed that it gives it a neat, clean, and professional look.
-7) ternary to control UI Display --> found in Product.js line 65
+3) async await   --> on the component did mount lifecycle method in Product.js and also    found in Retail.js to find 'store locations'
+4) routing based on params --> `/api/products/${this.props.match.params.id}` used in Product.js and linked to from individual products found in the Shop.js --> <Link to={`/product/${item.product_id}`}></Link>
+5) made a reusable component --> Product.js, displays different product props dependng on params
+6) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
+7) CSS - letter-spacing and line-height --> the site I cloned uses both often on titles and main texts and I observed that it gives it a neat, clean, and professional look.
+8) ternary to control UI Display --> found in Product.js line 65
 
 
 Things that I practiced:

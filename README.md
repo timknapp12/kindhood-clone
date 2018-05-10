@@ -24,8 +24,9 @@ Things that I practiced:
 7) put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
 
 Challenges:
-mapping through the locations
-
+mapping through the locations on the "Retail Locations" page found in Retail.js.
+At first I used a regular .map but the "California" was rendered with each iteration of the "city" and "store name" that existed in the state of California, but I only wanted it to render once at the top. So to solve it, I used the underscore library function "groupBy" to turn the whole array into an object with California only listed once, and then I had to do a "for in" loop to iterate through that object and then use a .map nested inside to iterate through each 
+"city" and "store name". It was a long, drawn-out toy problem but I enjoyed solving it.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

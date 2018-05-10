@@ -4,27 +4,27 @@ This is a clone of an already existing e-commerce site. I built it with React, N
 3) Practice skills that I have already learned
 
 The new things I worked on:
-1) carousel images --> on the Home.js, and the UI is accessed by clicking on the Logo in the Navbar
-2) state without constructor function --> in several class components ie Product.js
-3) async await   --> on the component did mount lifecycle method in Product.js and also    found in Retail.js to find 'store locations'
-4) routing based on params --> `/api/products/${this.props.match.params.id}` used in Product.js and linked to from individual products found in the Shop.js --> <Link to={`/product/${item.product_id}`}></Link>
-5) made a reusable component --> Product.js, displays different product props dependng on params
+1) Carousel images --> on the Home.js, and the UI is accessed by clicking on the Logo in the Navbar
+2) State without constructor function --> in several class components ie Product.js
+3) Async await   --> on the component did mount lifecycle method in Product.js and also    found in Retail.js to find 'store locations'
+4) Routing based on params --> `/api/products/${this.props.match.params.id}` used in Product.js and linked to from individual products found in the Shop.js --> <Link to={`/product/${item.product_id}`}></Link>
+5) Made a reusable component --> Product.js, displays different product props dependng on params
 6) BEM naming conventions (Block-Element-Modifier) --> found on classNames in JSX and components.scss
 7) CSS - letter-spacing and line-height --> the site I cloned uses both often on titles and main texts and I observed that it gives it a neat, clean, and professional look.
-8) ternary to control UI Display --> found in Product.js line 65
+8) Ternary to control UI Display --> found in Product.js line 65. This way the size guide was only displayed for kids' ponchos and not for intants' towels.
 
 
 Things that I practiced:
 1) scss --> variables, mixins
 2) css grid --> used on lower half of the Footer.js and found in _components.scss line 252
 3) flexbox --> used for almost all styling
-4) database --> Heroku, Postgres, Massive
-5) map function --> used in Product.js, Retail.js, Shop.js, and Press.js
-6) keyframes for the dropdown menu --> found in the Navbar.js and _components.scss line 80
-7) put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
+4) Database --> Heroku, Postgres, Massive
+5) Map function --> used in Product.js, Retail.js, Shop.js, and Press.js
+6) Keyframes for the dropdown menu --> found in the Navbar.js and _components.scss line 80
+7) Put an input box inside an image using position properties --> in the Footer.js and fouund in _components.scss starting at line 307
 
 Challenges:
-mapping through the locations on the "Retail Locations" page found in Retail.js.
+1) Mapping through the locations on the "Retail Locations" page found in Retail.js.
 At first I used a regular .map but the state name of "California" was rendered with each iteration of the "city" and "store name" that existed in the state of California, but I only wanted it to render once at the top. So to solve it, I used the underscore library function "groupBy" to turn the whole array of locations by states into an object with California only listed once, and then I had to do a "for in" loop to iterate through that object and then use a .map nested inside to iterate through each "city" and "store name". It was a long, drawn-out toy problem but I enjoyed solving it.
 
 
